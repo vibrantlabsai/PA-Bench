@@ -1,0 +1,4 @@
+{
+  "type": "cascading_changes",
+  "description": "An external partner has rescheduled a meeting. Check for any dependent meetings that needs to be rescheduled and update the events accordingly in the calendar."
+}

@@ -1,0 +1,4 @@
+{
+  "type": "meeting_scheduling",
+  "description": "Check my inbox for today, find any emails that came in today requesting me to schedule meetings and schedule them in the calendar. Ensure that the meetings are scheduled without conflicts for all participants."
+}

@@ -1,0 +1,4 @@
+{
+  "type": "travel_confirmation",
+  "description": "Detect travel confirmations in your inbox and block appropriate times on your calendar for the flights"
+}

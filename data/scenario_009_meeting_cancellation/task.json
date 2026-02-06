@@ -1,0 +1,4 @@
+{
+  "type": "meeting_cancellation",
+  "description": "Check my inbox for today, handle any cancellation requests by removing meetings from calendar and notifying all participants."
+}

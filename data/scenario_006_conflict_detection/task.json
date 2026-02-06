@@ -1,0 +1,4 @@
+{
+  "type": "conflict_detection",
+  "description": "Check this week's calendar for scheduling conflict. If conflicts are found, find the corresponding email thread in my inbox and reply all to let them know about your conflict."
+}
