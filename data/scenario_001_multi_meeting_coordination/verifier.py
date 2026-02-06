@@ -1,6 +1,6 @@
 """
 Verifier for scenario scenario_001_multi_meeting_coordination
-Generated on 2026-02-04T11:18:43.155801
+Generated on 2026-02-05T22:34:39.821815
 """
 
 
@@ -38,7 +38,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
         debrief_end = debrief_end.replace(tzinfo=timezone.utc)
     
     external_email = "ethan.park@ridgeviewadvisors.com"
-    internal_emails = {'alan@helixgrid.com', 'nadia.chen@helixgrid.com', 'tomas.oliveira@helixgrid.com'}
+    internal_emails = {'alan@helixgrid.com', 'tomas.oliveira@helixgrid.com', 'nadia.chen@helixgrid.com'}
     
     events = state.get("calendar-clone").get("events", [])
     checks: List[TaskVerifier] = []

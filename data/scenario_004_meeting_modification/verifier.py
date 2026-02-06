@@ -1,6 +1,6 @@
 """
 Verifier for scenario scenario_004_meeting_modification
-Generated on 2026-02-04T11:20:02.174778
+Generated on 2026-02-05T22:36:05.795979
 """
 
 
@@ -19,9 +19,9 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     expected_email = {
     "id": "email_9717",
     "threadId": "thread_4974",
-    "subject": "Planning Meeting: Project X \u2014 Alignment & Next Steps",
-    "body": "Hi Arjun, Ethan, and Grace,\n\nI\u2019d like to schedule a meeting to align on Project X. Meeting Title: Planning Meeting: Project X.\n\nObjectives:\n- Confirm project scope and success criteria\n- Finalize high-level timeline and key milestones\n- Identify dependencies and risks\n- Assign immediate next steps and owners\n\nProposed agenda (approx. 1 hour total):\n- 10 min: Quick introductions and objectives\n- 25 min: Scope review and priority discussion\n- 15 min: Timeline, milestones, and dependencies\n- 10 min: Action items, owners, and next steps\n\nLocation: Meeting Room 1\nEstimated duration: Approximately 1 hour\n\nAlan (alan@helixgrid.com), could you please find a suitable time for all of us within the next week and schedule this meeting in Meeting Room 1? Please coordinate with the team and propose times that work for everyone. \n\nIf you have any materials or items to add to the agenda, please share them in advance so we can include them in the meeting invite.\n\nThanks,\nCamila Ruiz",
-    "snippet": "Hi Arjun, Ethan, and Grace,\n\nI\u2019d like to schedule a meeting to align on Project X. Meeting Title: Pl",
+    "subject": "Planning Meeting: Project X \u2014 Align on Next Steps",
+    "body": "Hi Arjun, Ethan, and Grace,\n\nI\u2019d like to schedule a meeting to align on next steps for Project X. Meeting title: \"Project X Planning Meeting\".\n\nLocation: Meeting Room 1\nEstimated duration: Approximately 1 hour\n\nAgenda:\n- Quick project status update from each owner\n- Define and prioritize upcoming milestones\n- Assign owners and deadlines for immediate next actions\n- Identify risks/blockers and mitigation steps\n- Confirm deliverables and success criteria\n\nObjectives:\n- Ensure everyone is aligned on scope and priorities for the next phase\n- Agree on responsibilities and short-term milestones\n- Surface any blockers so we can address them promptly\n\nAlan (alan@helixgrid.com), could you please find a suitable time for all and schedule this meeting within one week? Please book Meeting Room 1 and send a calendar invite to Arjun, Ethan, and Grace when you find an option that works for everyone.\n\nIf any of you have additional items to add to the agenda, or constraints I should note for scheduling, please reply and I\u2019ll include them.\n\nThanks,\n\nCamila Ruiz",
+    "snippet": "Hi Arjun, Ethan, and Grace,\n\nI\u2019d like to schedule a meeting to align on next steps for Project X. Me",
     "from": {
         "name": "Camila Ruiz",
         "email": "camila.ruiz@helixgrid.com"
@@ -64,7 +64,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
 }
     expected_new_location = "Conference Room D"
     expected_additional_guest_emails = ['marcus.lee@helixgrid.com', 'diego.alvarez@helixgrid.com']
-    expected_meeting_title = 'Planning Meeting: Project X'
+    expected_meeting_title = 'Project X Planning Meeting'
     
     events = state.get("calendar-clone").get("events", [])
     checks: List[TaskVerifier] = []

@@ -1,6 +1,6 @@
 """
 Verifier for scenario scenario_009_meeting_cancellation
-Generated on 2026-02-04T11:24:07.022488
+Generated on 2026-02-05T22:39:15.147834
 """
 
 
@@ -17,7 +17,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     """
     # Hardcoded expected values
     expected_event = {
-    "title": "Project X \u2014 Planning & Next Steps",
+    "title": "Project X Planning Meeting",
     "description": "",
     "calendarId": "primary",
     "start": "2026-01-13T00:00:00Z",

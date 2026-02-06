@@ -6131,9 +6131,9 @@
       {
         "id": "email_5382",
         "threadId": "thread_8383",
-        "subject": "Project Alignment & Next Steps \u2014 Team Sync",
-        "body": "I've scheduled a meeting titled 'Project Alignment & Next Steps \u2014 Team Sync' for Tuesday, January 13 at 10:00 AM. Participants: Kaito Nakamura, Elliot Rivera, Priya Singh, Olivia Brooks, Alan Cooper.\n\nAgenda: quick status updates, align on priorities and timelines, surface blockers, confirm ownership, and agree next steps. Plan for about 45 minutes.\n\nPlease come prepared with a brief update on your area and any decisions or resources you need. I\u2019ll send a calendar invite with the meeting link. Let me know as soon as possible if you can\u2019t make that time or need an adjustment.",
-        "snippet": "I've scheduled a meeting titled 'Project Alignment & Next Steps \u2014 Team Sync' for Tuesday, January 13",
+        "subject": "Cross\u2011Functional Team Sync: Roadmap, Sprint Progress & Blockers",
+        "body": "Hey team,\n\nI\u2019ve scheduled a Cross\u2011Functional Team Sync: Roadmap, Sprint Progress & Blockers for Tuesday, January 13 at 10:00 AM. Expected participants: Kaito Nakamura, Elliot Rivera, Priya Singh, Olivia Brooks, and Alan Cooper.\n\nAgenda highlights:\n- Roadmap alignment and any timeline changes\n- Sprint progress with short updates from each area\n- Current blockers and next steps to resolve them\n\nPlease come prepared with a 2\u20133 minute update for your area and any blockers you need input on. If you can\u2019t make it, let me know or share your notes in advance.",
+        "snippet": "Hey team,\n\nI\u2019ve scheduled a Cross\u2011Functional Team Sync: Roadmap, Sprint Progress & Blockers for Tues",
         "from": {
           "name": "Simon Walker",
           "email": "simon.walker@securemesh.io"
@@ -8170,8 +8170,8 @@
         "busyStatus": "busy"
       },
       {
-        "title": "Cross\u2011Functional Product Sync \u2014 Direction & Next Steps",
-        "description": "Organizer: Alan Cooper\nParticipants: Diego Alvarez, Paul Edmonds, Priya Singh, Sarah Patel\nPurpose: Align on product direction, prioritize upcoming work, resolve open decisions and assign owners.\nAgenda:\n1. Quick status updates (5 min each)\n2. Prioritization of features and key decisions (20 min)\n3. Timeline, milestones and owners (15 min)\n4. Risks, blockers and mitigation plan (10 min)\n5. Action items and next steps (5 min)\nPre-work: Please submit a 2\u20133 sentence status update and any relevant docs or mockups 24 hours before the meeting.\nDesired outcomes: Clear priorities for the next sprint, decisions on outstanding issues, and assigned owners with target dates.\nNotes: If anyone needs to add items to the agenda, please notify Alan in advance.",
+        "title": "Project Alignment & Next Steps \u2014 Team Meeting",
+        "description": "Host: Alan Cooper\nAttendees: Diego Alvarez; Paul Edmonds; Priya Singh; Sarah Patel\nPurpose: Align the team on current project status, identify blockers, make key decisions, and assign clear next steps and owners.\nAgenda:\n- 1) Quick status updates (10 min)\n- 2) Identify blockers and required decisions (20 min)\n- 3) Assign action items, owners, and deadlines (20 min)\n- 4) Wrap-up and confirm next meeting (10 min)\nExpected outcome: Agreed action plan with owners and target dates.\nDuration: 60 minutes\nLocation: Virtual (Zoom) \u2014 link to be provided in the invite\nNotes: Please confirm availability and add any items you want on the agenda. Paul Edmonds was listed twice; included once in the attendee list.",
         "calendarId": "primary",
         "start": "2026-01-13T18:00:00Z",
         "end": "2026-01-13T20:00:00Z",
@@ -8227,8 +8227,8 @@
         "isAllDay": false
       },
       {
-        "title": "Project Alignment & Next Steps \u2014 Team Sync",
-        "description": "Organizer: Simon Walker\nParticipants: Kaito Nakamura, Elliot Rivera, Priya Singh, Olivia Brooks, Alan Cooper\nDuration: 60 minutes (proposed)\nLocation: Video conference (link to follow)\nObjectives:\n- Align on project goals and priorities\n- Review current status and outstanding risks\n- Define immediate next steps, owners and timelines\nAgenda:\n1) Brief introductions and role call (5 min)\n2) Project overview and key objectives (10 min)\n3) Status updates from each participant (20 min)\n4) Identify blockers, risks and resource needs (15 min)\n5) Action items, owners and deadlines; confirm next meeting (10 min)\nPre-work:\n- Please come prepared with a 2\u20133 minute update on your area, key blockers, and any decisions needed from the group.\nDesired outcomes:\n- Clear list of action items with owners and deadlines\n- Agreed priorities for the next two weeks\nNotes:\n- If you have specific documents to share (roadmaps, specs), please attach them to the calendar invite or email them to the organizer ahead of time.",
+        "title": "Cross\u2011Functional Team Sync: Roadmap, Sprint Progress & Blockers",
+        "description": "Organizer: Simon Walker\nParticipants: Kaito Nakamura, Elliot Rivera, Priya Singh, Olivia Brooks, Alan Cooper\nDuration: 60 minutes\nLocation: Virtual (add video link in calendar invite)\nObjectives:\n- Align on product roadmap priorities and upcoming milestones\n- Review current sprint progress and key metrics\n- Surface and resolve blockers, assign owners\n- Decide on immediate next steps and owners\nProposed Agenda (60 min):\n1) 5 min \u2014 Welcome, goals for the meeting (Simon)\n2) 20 min \u2014 Quick status updates (each participant: 3\u20134 min) \u2014 progress, highlights, and metrics\n3) 20 min \u2014 Blockers & risks (deep-dive on 2\u20133 critical issues)\n4) 10 min \u2014 Decisions & prioritization (confirm next sprint focus)\n5) 5 min \u2014 Action items, owners, and follow-ups\nPreparation (please complete before the meeting):\n- Bring a 1-slide status for your area (current progress, 1\u20132 risks, proposed asks)\n- List any dependencies or decisions needed\nDesired outcome:\n- Clear set of prioritized actions for the next sprint, owners assigned, and any escalations noted\nNotes:\n- If any participant needs to add items to the agenda, share them 48 hours in advance\n- Follow-up notes and action items will be circulated within 24 hours after the meeting",
         "calendarId": "primary",
         "start": "2026-01-13T18:00:00Z",
         "end": "2026-01-13T20:00:00Z",

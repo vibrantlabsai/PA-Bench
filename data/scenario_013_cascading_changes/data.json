@@ -6409,8 +6409,8 @@
         "id": "email_announce_3937",
         "threadId": "thread_main_4742",
         "subject": "Partnership Strategy Review",
-        "body": "Scheduling update: Partnership Strategy Review on January 23 at 10:00 AM (1 hour). Invitation added to calendar. - Ridgeview Advisors (Ethan Park)",
-        "snippet": "Scheduling update: Partnership Strategy Review on January 23 at 10:00 AM (1 hour). Invitation added ",
+        "body": "Hello HelixGrid team \u2014 I've scheduled a meeting for Partnership Strategy Review on January 23 at 10:00 AM (1 hour). I've added the invite to the calendar for your convenience. I'm enthusiastic about the discussion and eager to align on next steps.\n\nBest regards,\nEthan Park\nRidgeview Advisors\nridgeviewadvisors.com",
+        "snippet": "Hello HelixGrid team \u2014 I've scheduled a meeting for Partnership Strategy Review on January 23 at 10:",
         "from": {
           "name": "Ethan Park",
           "email": "ethan.park@ridgeviewadvisors.com"
@@ -6488,8 +6488,8 @@
         "id": "email_reschedule_6620",
         "threadId": "thread_main_4742",
         "subject": "Re: Partnership Strategy Review",
-        "body": "Subject: Meeting Rescheduled \u2014 Partnership Strategy Review\n\nHello Helix Grid Team,\n\nThe Partnership Strategy Review originally scheduled for January 23 at 10:00 AM has been moved to January 26 at 10:30 AM due to a scheduling conflict with a client deliverable that requires additional preparation. I\u2019ve already updated the calendar invite to reflect the new time\u2014my apologies for any inconvenience this may cause.\n\nBest regards,\nEthan Park\nRidgeView Advisors\nridgeviewadvisors.com",
-        "snippet": "Subject: Meeting Rescheduled \u2014 Partnership Strategy Review\n\nHello Helix Grid Team,\n\nThe Partnership ",
+        "body": "Hello Helix Grid Team \u2014 I\u2019ve rescheduled our Partnership Strategy Review originally set for January 23 at 10:00 AM to January 26 at 10:30 AM due to a scheduling conflict with a client deliverable review. I\u2019ve already updated the calendar invite to reflect the new time. Apologies for any inconvenience, and thank you for your flexibility \u2014 Ethan Park, Ridgeview Advisors.",
+        "snippet": "Hello Helix Grid Team \u2014 I\u2019ve rescheduled our Partnership Strategy Review originally set for January ",
         "from": {
           "name": "Ethan Park",
           "email": "ethan.park@ridgeviewadvisors.com"

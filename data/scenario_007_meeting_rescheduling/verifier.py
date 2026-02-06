@@ -1,6 +1,6 @@
 """
 Verifier for scenario scenario_007_meeting_rescheduling
-Generated on 2026-02-04T11:22:29.567383
+Generated on 2026-02-05T22:38:06.616125
 """
 
 
@@ -19,9 +19,9 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     expected_email = {
     "id": "email_4490",
     "threadId": "thread_8302",
-    "subject": "Planning Meeting: Project Coordination and Next Steps",
-    "body": "Hi Elliot, Ben, Omar, and Rhea,\n\nI\u2019d like to schedule a meeting titled \"Project Coordination & Rollout Planning\" to align on next steps for our current work and ensure everyone is clear on responsibilities and milestones.\n\nProposed agenda:\n- Status updates from each participant (brief)\n- Review of key milestones and dependencies\n- Identification of risks and blockers, and mitigation plans\n- Assignment of action items and responsibilities\n- Next steps and timeline for delivery\n\nObjectives:\n- Ensure alignment on priorities and responsibilities\n- Finalize milestones and immediate next steps\n- Identify and address any blockers preventing progress\n- Agree on owners for action items and follow-up\n\nDetails:\n- Estimated duration: approximately 45 minutes\n- Platform: Google Meet\n- Meeting title: Project Coordination & Rollout Planning\n\nalan@helixgrid.com, could you please find a suitable time this week that works for everyone and create a Google Meet invite? Please include the Meet link in the calendar invitation.\n\nAction for attendees:\n- Please prepare a brief (2\u20133 minute) status update on your area and any materials that will help the discussion.\n- Reply with any additional agenda items you\u2019d like to include or confirm if you can attend once alan@helixgrid.com proposes times.\n\nThanks,\nAnika Bose",
-    "snippet": "Hi Elliot, Ben, Omar, and Rhea,\n\nI\u2019d like to schedule a meeting titled \"Project Coordination & Rollo",
+    "subject": "Planning Meeting: Cross-Team Project Coordination",
+    "body": "Hi Elliot, Ben, Omar, and Rhea,\n\nI would like to schedule a meeting titled \"Cross-Team Project Coordination \u2014 Planning Meeting\" to align on next steps, responsibilities, and key priorities for our project.\n\nAgenda (approx. 45 minutes):\n- Review current project status and key risks\n- Prioritize tasks and dependencies for the coming work cycle\n- Assign owners and tentative next steps\n- Identify blockers and support needed\n\nObjectives:\n- Establish a shared view of priorities and deliverables\n- Assign clear owners for immediate actions\n- Agree on mitigation steps for any risks or blockers\n\nLogistics:\n- Meeting title: Cross-Team Project Coordination \u2014 Planning Meeting\n- Estimated duration: ~45 minutes\n- Location: Google Meet\n\nAlan (alan@helixgrid.com), could you please find a suitable time for all and schedule this meeting on Google Meet sometime this week? Please circulate the Meet link and calendar invite once confirmed.\n\nIf anyone has additional agenda items or constraints for this week, please reply and I will update the agenda accordingly.\n\nThanks,\nAnika Bose",
+    "snippet": "Hi Elliot, Ben, Omar, and Rhea,\n\nI would like to schedule a meeting titled \"Cross-Team Project Coord",
     "from": {
         "name": "Anika Bose",
         "email": "anika.bose@helixgrid.com"
@@ -67,7 +67,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     "hasQuotedContent": None
 }
     expected_location = 'Google Meet'
-    expected_meeting_title = 'Project Coordination & Rollout Planning'
+    expected_meeting_title = 'Cross-Team Project Coordination — Planning Meeting'
     
     events = state.get("calendar-clone").get("events", [])
     checks: List[TaskVerifier] = []

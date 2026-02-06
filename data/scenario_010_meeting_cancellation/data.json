@@ -6408,9 +6408,9 @@
       {
         "id": "email_4709",
         "threadId": "thread_1206",
-        "subject": "Planning Meeting \u2014 Project X: Scope, Timeline & Risks",
-        "body": "Hello Adrian and Yara,\n\nI would like to schedule a meeting titled \"Project X Planning Session\" to align on scope, priorities, and potential risks for Project X. The meeting will be approximately 1 hour and will be held in Conference Room B. Please plan for a one-hour session.\n\nObjectives:\n- Align on project scope and key deliverables\n- Define priorities and milestones\n- Identify and assess potential risks and mitigation steps\n- Assign initial owners and next steps\n\nProposed agenda:\n1. Brief project overview and current status (10 minutes)\n2. Scope and deliverables discussion (20 minutes)\n3. Timeline and milestone alignment (15 minutes)\n4. Risk identification and mitigation (10 minutes)\n5. Action items and owners (5 minutes)\n\nAttendees: Adrian M\u00fcller, Yara Haddad\n\n@alan@helixgrid.com \u2014 could you please find a suitable 1-hour time slot for all participants this week and schedule the meeting in Conference Room B? I am not suggesting specific dates or times here so you can coordinate availability.\n\nPlease confirm your availability for this week and share any additional items to add to the agenda.\n\nThanks,\nGrace Nguyen",
-        "snippet": "Hello Adrian and Yara,\n\nI would like to schedule a meeting titled \"Project X Planning Session\" to al",
+        "subject": "Planning Meeting: Project X \u2014 Conference Room B",
+        "body": "Hi Adrian, Yara,\n\nI\u2019d like to schedule a Planning Meeting \u2014 Project X to align on scope, responsibilities, and next steps.\n\nParticipants:\n- Adrian M\u00fcller\n- Yara Haddad\n- Yara Haddad\n\nMeeting title: Planning Meeting \u2014 Project X\nLocation: Conference Room B\nDuration: Approximately 1 hour\n\nProposed agenda:\n1. Review project scope and key milestones\n2. Assign tasks and owners for immediate deliverables\n3. Identify blockers, resource needs, and risks\n4. Agree on next steps and short-term timeline\n\nMeeting objectives:\n- Confirm and finalize responsibilities for the next sprint\n- Surface and mitigate any immediate risks or blockers\n- Establish clear next actions and owners with expected deliverables\n\n@alan@helixgrid.com \u2014 could you please find a suitable time for all participants this week and schedule this ~1-hour meeting in Conference Room B? Please share the confirmed time with the group once arranged.\n\nPlease reply with any additional agenda items or conflicts. If you prefer to join remotely, let me know and I\u2019ll ensure conferencing details are included.\n\nThanks,\nGrace Nguyen",
+        "snippet": "Hi Adrian, Yara,\n\nI\u2019d like to schedule a Planning Meeting \u2014 Project X to align on scope, responsibil",
         "from": {
           "name": "Grace Nguyen",
           "email": "grace.nguyen@helixgrid.com"
@@ -6454,9 +6454,9 @@
       {
         "id": "email_6034",
         "threadId": "thread_1206",
-        "subject": "Planning Meeting \u2014 Project X: Scope, Timeline & Risks",
-        "body": "I've scheduled the Project X Planning Session for Wednesday, January 21 at 12:00 PM. Looking forward to a productive discussion \u2014 Alan Cooper",
-        "snippet": "I've scheduled the Project X Planning Session for Wednesday, January 21 at 12:00 PM. Looking forward",
+        "subject": "Planning Meeting: Project X \u2014 Conference Room B",
+        "body": "I've scheduled our Planning Meeting \u2014 Project X for Wednesday, January 21 at 12:00 PM. Looking forward to a productive discussion!\n\n\u2014 Alan Cooper",
+        "snippet": "I've scheduled our Planning Meeting \u2014 Project X for Wednesday, January 21 at 12:00 PM. Looking forwa",
         "from": {
           "name": "Alan Cooper",
           "email": "alan@helixgrid.com"
@@ -6500,9 +6500,9 @@
       {
         "id": "email_8794",
         "threadId": "thread_4904",
-        "subject": "Planning Meeting \u2014 Project X: Scope, Timeline & Risks",
-        "body": "Subject: Cancellation \u2014 \"Project X Planning Session\" (Wed, Jan 21, 12:00\u20131:00 PM)\n\nHi Alan,\n\nProject priorities have shifted and the \"Project X Planning Session\" scheduled for Wednesday, January 21 from 12:00\u20131:00 PM in Conference Room B is no longer needed. Please cancel the calendar event and notify Adrian M\u00fcller and Yara Haddad.\n\nThanks,\nGrace Nguyen",
-        "snippet": "Subject: Cancellation \u2014 \"Project X Planning Session\" (Wed, Jan 21, 12:00\u20131:00 PM)\n\nHi Alan,\n\nProject",
+        "subject": "Planning Meeting: Project X \u2014 Conference Room B",
+        "body": "Subject: Cancellation: Planning Meeting \u2014 Project X (Wed, Jan 21, 12:00\u20131:00 PM)\n\nHi Alan,\n\nThe Planning Meeting \u2014 Project X scheduled for Wednesday, January 21, 12:00\u20131:00 PM is no longer needed due to a shift in project priorities. Could you please cancel the meeting from the calendar and notify all participants?\n\nThanks,\nGrace Nguyen",
+        "snippet": "Subject: Cancellation: Planning Meeting \u2014 Project X (Wed, Jan 21, 12:00\u20131:00 PM)\n\nHi Alan,\n\nThe Plan",
         "from": {
           "name": "Grace Nguyen",
           "email": "grace.nguyen@helixgrid.com"
@@ -8522,7 +8522,7 @@
         "busyStatus": "busy"
       },
       {
-        "title": "Project X Planning Session",
+        "title": "Planning Meeting \u2014 Project X",
         "description": "",
         "calendarId": "primary",
         "start": "2026-01-21T20:00:00Z",

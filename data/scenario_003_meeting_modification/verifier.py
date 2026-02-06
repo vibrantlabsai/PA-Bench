@@ -1,6 +1,6 @@
 """
 Verifier for scenario scenario_003_meeting_modification
-Generated on 2026-02-04T11:19:29.890649
+Generated on 2026-02-05T22:35:36.374286
 """
 
 
@@ -19,9 +19,9 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     expected_email = {
     "id": "email_3505",
     "threadId": "thread_9020",
-    "subject": "Planning Meeting: Project X Next Steps",
-    "body": "Hi Liam, Anika and Elena,\n\nI\u2019d like to schedule a ~30-minute planning meeting titled \"Project X Planning Session\" in Conference Room B to align on next steps and prepare for the upcoming milestone.\n\nAgenda:\n1. Current status and key risks\n2. Task assignments and owners\n3. Timeline, dependencies and immediate next actions\n4. Decisions required to stay on track\n\nObjectives:\n- Confirm owners and deadlines for critical tasks\n- Identify and mitigate top risks\n- Establish clear next steps and deliverables for the coming sprint\n\nAlan (alan@helixgrid.com), could you please find a suitable 30-minute slot within the next week that works for everyone and book Conference Room B? Please propose options that fit all participants and include the meeting title \"Project X Planning Session\" in the booking.\n\nIf you have additional agenda items or constraints, please reply and I\u2019ll update the agenda accordingly. I\u2019ll confirm the final time once Alan provides available slots.\n\nThanks,\nSarah Patel",
-    "snippet": "Hi Liam, Anika and Elena,\n\nI\u2019d like to schedule a ~30-minute planning meeting titled \"Project X Plan",
+    "subject": "Planning Meeting: Project X \u2014 Initial Alignment",
+    "body": "Hi Liam, Anika, and Elena,\n\nI'd like to schedule a meeting titled \"Project X - Planning Meeting\" to align on the next steps for Project X. The meeting will be approximately 30 minutes and will take place in Conference Room B.\n\nAgenda\n- Review and confirm project scope and objectives\n- Identify key deliverables and milestones\n- Assign initial action items and owners\n- Surface immediate risks, dependencies, and blockers\n- Define next steps and communication cadence\n\nObjectives\n- Ensure a shared understanding of scope and success criteria\n- Agree on owners for first deliverables and immediate actions\n- Establish clear next steps and follow-up plan\n\nAlan (alan@helixgrid.com), could you please find a suitable 30-minute slot for all participants within the next week and book Conference Room B? Once you propose options, I\u2019ll confirm with the group. If any of you have scheduling constraints or materials to share in advance, please let us know.\n\nThanks,\nSarah Patel",
+    "snippet": "Hi Liam, Anika, and Elena,\n\nI'd like to schedule a meeting titled \"Project X - Planning Meeting\" to ",
     "from": {
         "name": "Sarah Patel",
         "email": "sarah.patel@helixgrid.com"
@@ -66,9 +66,9 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     "quotedContent": None,
     "hasQuotedContent": None
 }
-    expected_new_location = "Meeting Room 3"
+    expected_new_location = "Conference Room C"
     expected_additional_guest_emails = ['marcus.osei@helixgrid.com', 'pri.menon@auroracloud.com']
-    expected_meeting_title = 'Project X Planning Session'
+    expected_meeting_title = 'Project X - Planning Meeting'
     
     events = state.get("calendar-clone").get("events", [])
     checks: List[TaskVerifier] = []

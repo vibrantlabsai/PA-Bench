@@ -6408,8 +6408,8 @@
       {
         "id": "email_4180",
         "threadId": "thread_3775",
-        "subject": "Ridgeview\u2013HelixGrid Proposal Follow-up",
-        "body": "Subject: Follow-up on Ridgeview Advisors Proposal \u2014 Call Scheduled for Friday at 3:15 PM\n\nHello HelixGrid Team,\n\nI hope you\u2019re doing well. Thank you again for the positive reception to our recent proposal \u2014 I\u2019m glad the team found our recommendations helpful. To keep momentum and address any questions, I\u2019ve scheduled a follow-up call for Friday at 3:15 PM.\n\nProposed agenda:\n- Quick recap of the proposal and its key benefits (5\u201310 minutes)\n- Questions and clarification from your team (10\u201315 minutes)\n- Next steps, timeline, and responsibilities (10 minutes)\n- Any additional items you\u2019d like to cover\n\nIf Friday at 3:15 PM is not convenient for anyone, please let me know and I\u2019ll happily reschedule. I\u2019ll send a calendar invite with dial-in details and materials for review prior to the call.\n\nLooking forward to continuing the conversation.\n\nBest regards,\nEthan Park\nRidgeview Advisors\nridgeviewadvisors.com\nethan@ridgeviewadvisors.com\n(If you prefer a different contact number, please let me know.)",
+        "subject": "Follow-up: Ridgeview Advisors Proposal & Scheduled Call \u2014 Friday 3:15 PM",
+        "body": "Subject: Follow-up on Ridgeview Advisors Proposal \u2014 Call Scheduled for Friday at 3:15 PM\n\nHello HelixGrid Team,\n\nI hope you\u2019re doing well. I wanted to thank you again for the positive reception to our recent proposal \u2014 I\u2019m encouraged by the feedback and excited about the potential for us to collaborate.\n\nI\u2019ve scheduled a follow-up call for Friday at 3:15 PM to review next steps, address any questions you may have, and discuss timelines and priorities. Proposed agenda:\n- Quick recap of the proposal highlights\n- Clarify any open questions or concerns\n- Discuss implementation milestones and timeline\n- Confirm roles, deliverables, and next steps\n\nIf there are any additional items you\u2019d like added to the agenda or if that time doesn\u2019t work, please let me know and I\u2019ll be happy to adjust. Otherwise, I look forward to speaking with the team on Friday.\n\nBest regards,\nEthan Park\nRidgeview Advisors\nethan.park@ridgeviewadvisors.com\n(555) 123-4567",
         "snippet": "Subject: Follow-up on Ridgeview Advisors Proposal \u2014 Call Scheduled for Friday at 3:15 PM\n\nHello Heli",
         "from": {
           "name": "Ethan Park",
@@ -6450,7 +6450,7 @@
       {
         "id": "email_2503",
         "threadId": "thread_3775",
-        "subject": "Ridgeview\u2013HelixGrid Proposal Follow-up",
+        "subject": "Follow-up: Ridgeview Advisors Proposal & Scheduled Call \u2014 Friday 3:15 PM",
         "body": "\n        Yes, that time works perfectly for us. Looking forward to our discussion.\n        ",
         "snippet": "\n        Yes, that time works perfectly for us. Looking forward to our discussion.\n        ",
         "from": {
@@ -6492,7 +6492,7 @@
       {
         "id": "email_8231",
         "threadId": "thread_3775",
-        "subject": "Re: Ridgeview\u2013HelixGrid Proposal Follow-up",
+        "subject": "Re: Follow-up: Ridgeview Advisors Proposal & Scheduled Call \u2014 Friday 3:15 PM",
         "body": "\n        Hey guys, Lets have a 15 mins prep right before and a 15-min debrief meeting right after our main meeting with ethan.park to discuss and align on things internally.\n        \n        @Alan Cooper, can you please set these up?\n        \n        Cheers,\n        Tom\u00e1s Oliveira\n        ",
         "snippet": "\n        Hey guys, Lets have a 15 mins prep right before and a 15-min debrief meeting right after ou",
         "from": {
@@ -8515,7 +8515,7 @@
       },
       {
         "id": "event_3478",
-        "title": "Ridgeview\u2013HelixGrid Proposal Follow-up",
+        "title": "Follow-up: Ridgeview Advisors Proposal & Scheduled Call \u2014 Friday 3:15 PM",
         "description": "Business call to discuss next steps following proposal",
         "calendarId": "primary",
         "start": "2026-01-23T23:15:00Z",

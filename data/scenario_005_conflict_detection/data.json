@@ -6131,9 +6131,9 @@
       {
         "id": "email_1613",
         "threadId": "thread_2335",
-        "subject": "Coordination Meeting \u2014 David, Yara, Jordan & Alan",
-        "body": "Coordination Meeting \u2014 David, Yara, Jordan & Alan\n\nI\u2019ve scheduled a coordination meeting to align on action items, timelines, and any outstanding dependencies on Tuesday, January 13 at 10:00 AM. Please be ready to give a brief update on your current priorities and any blockers:\n\n- Yara Haddad: quick status update\n- Jordan White: quick status update\n- Alan Cooper: quick status update\n\nIf you have any materials to share, please upload them to the team folder before the meeting. If you can\u2019t make this time or need to propose a change, let me know as soon as possible.",
-        "snippet": "Coordination Meeting \u2014 David, Yara, Jordan & Alan\n\nI\u2019ve scheduled a coordination meeting to align on",
+        "subject": "Product & Implementation Sync \u2014 David, Yara, Jordan, Alan",
+        "body": "Hey team,\n\nI've scheduled the meeting \"Product & Implementation Sync \u2014 David, Yara, Jordan, Alan\" for Tuesday, January 13 at 10:00 AM. We'll use this time to align on product priorities and implementation status \u2014 quick updates, blockers, timelines, and next steps.\n\nProposed agenda:\n- Quick status updates (2\u20133 minutes each)\n- Current implementation blockers and timeline adjustments\n- Open decisions and action items\n\nPlease come prepared with your updates and any blockers you want to discuss. If you can't make it or want to add agenda items, let me know.",
+        "snippet": "Hey team,\n\nI've scheduled the meeting \"Product & Implementation Sync \u2014 David, Yara, Jordan, Alan\" fo",
         "from": {
           "name": "David Chow",
           "email": "david.chow@aerologix.com"
@@ -8162,8 +8162,8 @@
         "busyStatus": "busy"
       },
       {
-        "title": "Product Roadmap Alignment Meeting",
-        "description": "Organizer: Alan Cooper\nParticipants: Karen Liu, Rhea Patel, Hannah Kim, Ravi Sharma\nPurpose: Align on the product roadmap, clarify next-phase deliverables, identify risks/dependencies, and assign owners for immediate next steps.\nDuration: 60 minutes\nLocation: Video conference (link to be added)\nAgenda:\n1) Quick status updates (5 minutes)\n2) Review roadmap milestones and key dependencies (20 minutes)\n3) Discuss blockers, resource needs, and risks (15 minutes)\n4) Assign owners and agree on actions and timeline (15 minutes)\nPreparation:\n- Each participant bring a 1\u20132 minute update on their area, including any blockers.\n- Share any relevant one-page status notes or a slide before the meeting if possible.\nDesired outcomes:\n- Agreed owners for next actions\n- Updated timeline and clear dependencies\n- Follow-up meeting scheduled if needed\nNotes: Please confirm availability or suggest times; I will schedule and send invites once we have a date/time.",
+        "title": "Product Roadmap & Launch Planning \u2014 Team Sync",
+        "description": "Organizer: Alan Cooper\nParticipants: Karen Liu, Rhea Patel, Hannah Kim, Ravi Sharma\nPurpose: Align on the upcoming product launch timeline, confirm ownership of remaining tasks, identify and mitigate risks, and finalize key milestones.\nAgenda (45\u201360 min):\n1) Quick status updates (5\u201310 min) \u2014 Karen, Rhea, Hannah, Ravi\n2) Review critical path and timeline adjustments (10\u201315 min)\n3) Decisions required: feature scope, launch date commitments, resource needs (10\u201315 min)\n4) Risks/blockers and mitigation plans (5\u201310 min)\n5) Action items, owners, and deadlines (5 min)\nPreparation: Bring latest status notes, known dependencies, and any open decision items. Share related docs in the calendar invite prior to the meeting.\nOutcome: Agreed launch timeline, assigned owners for outstanding tasks, and a short list of prioritized next steps.",
         "calendarId": "primary",
         "start": "2026-01-13T18:00:00Z",
         "end": "2026-01-13T20:00:00Z",
@@ -8212,8 +8212,8 @@
         "isAllDay": false
       },
       {
-        "title": "Coordination Meeting \u2014 David, Yara, Jordan & Alan",
-        "description": "Purpose: Align on current priorities, clarify responsibilities, and set next steps for our ongoing initiatives.\n\nAgenda:\n- 5 min: Quick round of status updates (each attendee)\n- 20 min: Discuss top priorities, risks, and dependencies\n- 15 min: Define action items, owners, and target dates\n- 10 min: Open questions and wrap-up\n\nDesired outcomes: Agreed priorities, assigned owners for next actions, and a shared timeline.\n\nPre-work: Please come prepared with a 1\u20132 minute update on your top items and any blockers.\n\nDuration: 50 minutes\nLocation: Virtual (Zoom link to follow)\nOrganizer: David Chow\nAttendees: Yara Haddad, Jordan White, Alan Cooper\n\nNotes: If anyone needs to add items to the agenda, reply to the invite with proposals.",
+        "title": "Product & Implementation Sync \u2014 David, Yara, Jordan, Alan",
+        "description": "Organizer: David Chow\nParticipants: Yara Haddad, Jordan White, Alan Cooper\nDuration: 60 minutes (suggested)\nLocation: Zoom / Conference room (to be confirmed)\n\nObjective:\n- Align product priorities and implementation plan across design, product, and engineering. Define owners and next steps.\n\nAgenda:\n1) Quick round of status updates (10 minutes) \u2014 each participant shares current progress and major blockers.\n2) Priorities & scope confirmation (20 minutes) \u2014 agree on top deliverables for the next sprint/quarter.\n3) Technical constraints & dependencies (15 minutes) \u2014 identify risks, required resources, and cross-team handoffs.\n4) Action items & owners (15 minutes) \u2014 assign tasks, deadlines, and follow-up meeting cadence.\n\nPre-meeting prep:\n- Share short status notes (1\u20132 bullets) on current work and blockers in the calendar invite or chat.\n- Bring any relevant docs or mockups.\n\nExpected outcomes:\n- Agreed priority list, named owners for actions, and a schedule for follow-up.\n\nNotes: Please confirm availability or propose alternate times when you accept the invite.",
         "calendarId": "primary",
         "start": "2026-01-13T18:00:00Z",
         "end": "2026-01-13T20:00:00Z",

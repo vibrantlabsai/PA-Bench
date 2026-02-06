@@ -4541,9 +4541,9 @@
       {
         "id": "email_4890",
         "threadId": "thread_5431",
-        "subject": "Planning Meeting: Project X \u2014 Next Steps",
-        "body": "Hi Priyanka, Yara, and Ethan,\n\nI\u2019d like to schedule a meeting to align on Project X. Meeting title: \"Project X \u2014 Planning & Next Steps.\" The objectives are to review current status, confirm priorities, assign owners for immediate deliverables, and agree on next steps to keep the project on track.\n\nProposed agenda:\n- Quick status update and key milestones\n- Define immediate deliverables and owners\n- Identify dependencies and risks\n- Agree on next actions and timeline\n\nEstimated duration: approximately 30 minutes.\nLocation: Conference Room B.\n\nAlan (alan@helixgrid.com), could you please find a suitable 30-minute slot this week that works for everyone and book Conference Room B? Priyanka, Yara, Ethan \u2014 please reply with your availability for this week or flag any constraints so Alan can coordinate.\n\nThanks,\nPriya Singh",
-        "snippet": "Hi Priyanka, Yara, and Ethan,\n\nI\u2019d like to schedule a meeting to align on Project X. Meeting title: ",
+        "subject": "Project X Planning Meeting",
+        "body": "Hi Priyanka, Yara, Ethan,\n\nI\u2019d like to schedule a meeting to align on next steps for Project X.\n\nMeeting title: Project X Planning Meeting\nLocation: Conference Room B\nEstimated duration: Approximately 30 minutes\n\nAgenda:\n- Quick status update on Project X\n- Define immediate next steps and priorities\n- Assign action items and owners\n- Identify blockers and resource needs\n\nObjectives:\n- Align the team on deliverables for the coming sprint\n- Confirm responsibilities and owners for each action\n- Surface any risks or dependencies that need escalation\n\nAlan (alan@helixgrid.com), could you please find a suitable time for all participants this week and schedule this meeting in Conference Room B? I\u2019m asking that it be set for approximately 30 minutes. If any of you have additional agenda items, please reply and I\u2019ll update the agenda.\n\nThanks,\nPriya Singh",
+        "snippet": "Hi Priyanka, Yara, Ethan,\n\nI\u2019d like to schedule a meeting to align on next steps for Project X.\n\nMee",
         "from": {
           "name": "Priya Singh",
           "email": "priya.singh@helixgrid.com"
@@ -4587,9 +4587,9 @@
       {
         "id": "email_4077",
         "threadId": "thread_5431",
-        "subject": "Planning Meeting: Project X \u2014 Next Steps",
-        "body": "I've scheduled our Project X \u2014 Planning & Next Steps meeting for Monday, January 12 at 4:00 PM. Looking forward to a productive discussion \u2014 Alan Cooper.",
-        "snippet": "I've scheduled our Project X \u2014 Planning & Next Steps meeting for Monday, January 12 at 4:00 PM. Look",
+        "subject": "Project X Planning Meeting",
+        "body": "I've scheduled the Project X Planning Meeting for Monday, January 12 at 4:00 PM \u2014 looking forward to a productive discussion!",
+        "snippet": "I've scheduled the Project X Planning Meeting for Monday, January 12 at 4:00 PM \u2014 looking forward to",
         "from": {
           "name": "Alan Cooper",
           "email": "alan@helixgrid.com"
@@ -4633,9 +4633,9 @@
       {
         "id": "email_4506",
         "threadId": "thread_7169",
-        "subject": "Planning Meeting: Project X \u2014 Next Steps",
-        "body": "Subject: Cancel \u2014 Project X \u2014 Planning & Next Steps (Mon, Jan 12, 4:00\u20134:30 PM)\n\nHi Alan,\n\nPlease cancel the \"Project X \u2014 Planning & Next Steps\" meeting scheduled for Monday, January 12, 4:00\u20134:30 PM. The meeting is no longer needed due to a shift in project priorities\u2014please remove it from the calendar and notify the participants.\n\nThanks,\nPriya Singh",
-        "snippet": "Subject: Cancel \u2014 Project X \u2014 Planning & Next Steps (Mon, Jan 12, 4:00\u20134:30 PM)\n\nHi Alan,\n\nPlease ca",
+        "subject": "Project X Planning Meeting",
+        "body": "Subject: Cancel \u2014 Project X Planning Meeting\n\nHi Alan,\n\nDue to a shift in project priorities, the Project X Planning Meeting scheduled for Monday, January 12 at 4:00 PM is no longer needed. Please cancel the event from the calendar and notify all participants.\n\nThanks,\nPriya Singh",
+        "snippet": "Subject: Cancel \u2014 Project X Planning Meeting\n\nHi Alan,\n\nDue to a shift in project priorities, the Pr",
         "from": {
           "name": "Priya Singh",
           "email": "priya.singh@helixgrid.com"
@@ -6655,7 +6655,7 @@
         "busyStatus": "busy"
       },
       {
-        "title": "Project X \u2014 Planning & Next Steps",
+        "title": "Project X Planning Meeting",
         "description": "",
         "calendarId": "primary",
         "start": "2026-01-13T00:00:00Z",

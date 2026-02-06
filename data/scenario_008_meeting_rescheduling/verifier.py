@@ -1,6 +1,6 @@
 """
 Verifier for scenario scenario_008_meeting_rescheduling
-Generated on 2026-02-04T11:23:21.695610
+Generated on 2026-02-05T22:38:44.252877
 """
 
 
@@ -19,9 +19,9 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     expected_email = {
     "id": "email_9547",
     "threadId": "thread_6015",
-    "subject": "Planning Meeting: Sprint Priorities & Launch Readiness",
-    "body": "Hi Simon, Rhea, and Lydia,\n\nI\u2019d like to schedule a meeting titled \u201cSprint Priorities & Launch Readiness\u201d to align on our next sprint and ensure we\u2019re ready for the upcoming launch.\n\nObjectives:\n- Align on sprint priorities and confirm scope\n- Assign owners for remaining launch tasks\n- Identify and mitigate any blockers or risks\n- Agree on timeline and next steps leading up to launch\n\nProposed agenda (45 minutes):\n1. Quick status update (5\u20137 min)\n2. Review and prioritize backlog items for the sprint (15 min)\n3. Assign tasks and owners (10 min)\n4. Identify risks/blockers and mitigation plans (8 min)\n5. Confirm timeline and next steps (5 min)\n\nMeeting details:\n- Meeting title: Sprint Priorities & Launch Readiness\n- Duration: approximately 45 minutes\n- Location: Google Meet\n\nAlan (alan@helixgrid.com), could you please find a suitable time for all and schedule this meeting on Google Meet for this week? Everyone else, please reply with your availability for this week or let us know if you need a different week.\n\nThanks,\nOmar Hassan",
-    "snippet": "Hi Simon, Rhea, and Lydia,\n\nI\u2019d like to schedule a meeting titled \u201cSprint Priorities & Launch Readin",
+    "subject": "Planning Meeting: Integration Roadmap and Next Steps",
+    "body": "Hi Simon, Rhea, and Lydia,\n\nI would like to schedule a meeting to align on the Integration Roadmap and next steps. Meeting title: \"Integration Roadmap Planning\".\n\nPurpose and objectives:\n- Align on the current integration status and outstanding items.\n- Agree on milestones and owners for the next phase.\n- Identify risks, dependencies, and required support.\n- Define clear next steps and deliverables.\n\nProposed agenda (45 minutes approximate):\n1. Quick status recap (10 min)\n2. Review and agree on milestones and owners (15 min)\n3. Identify risks/dependencies and mitigation (10 min)\n4. Confirm next steps and action items (10 min)\n\nPlatform: Google Meet (please include the Meet link in the calendar invite).\n\nAlan (alan@helixgrid.com), could you please find a suitable time for all attendees this week and set up the Google Meet invite? Please coordinate with Simon, Rhea, and Lydia and include the Meet link in the calendar event.\n\nPlease let me know if you\u2019d like any items added to the agenda or if there are materials I should circulate ahead of the meeting.\n\nThanks,\nOmar Hassan",
+    "snippet": "Hi Simon, Rhea, and Lydia,\n\nI would like to schedule a meeting to align on the Integration Roadmap a",
     "from": {
         "name": "Omar Hassan",
         "email": "omar.hassan@helixgrid.com"
@@ -63,7 +63,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     "hasQuotedContent": None
 }
     expected_location = 'Google Meet'
-    expected_meeting_title = 'Sprint Priorities & Launch Readiness'
+    expected_meeting_title = 'Integration Roadmap Planning'
     
     events = state.get("calendar-clone").get("events", [])
     checks: List[TaskVerifier] = []
