@@ -1,0 +1,15 @@
+[project]
+name = "pa-bench-sdk"
+version = "0.1.0"
+description = "SDK for loading and verifying PA Bench scenarios against Vibrant Labs worlds."
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp>=3.8",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+pa-bench = "pa_bench_sdk.cli:main"
