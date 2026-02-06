@@ -8,6 +8,7 @@ from pa_bench_sdk.cli import (
     run_load,
     run_verify,
 )
+from pa_bench_sdk.scenario import ScenarioLoader
 from pa_bench_sdk.verifier import VerificationResult
 from pa_bench_sdk.worlds import InstanceEndpoints
 
@@ -40,6 +41,13 @@ def test_cli_load_sets_states(mock_world_client, mock_resolve):
     asyncio.run(run_load(args))
 
     mock_client.set_states.assert_awaited_once()
+    loader = ScenarioLoader(Path("data"))
+    scenario = loader.load(FIXTURE_SCENARIO)
+    call = mock_client.set_states.await_args
+    gmail_payload = call.kwargs["gmail_state"]
+    calendar_payload = call.kwargs["calendar_state"]
+    assert gmail_payload["today"] == scenario.metadata.today
+    assert calendar_payload["today"] == scenario.metadata.today
 
 
 @patch("pa_bench_sdk.cli.resolve_instance_urls", new_callable=AsyncMock)

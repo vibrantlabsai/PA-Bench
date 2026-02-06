@@ -15,6 +15,7 @@ def test_scenario_loader_returns_states(tmp_path):
     assert "calendar-clone" in scenario.raw_data
     assert scenario.gmail_state == scenario.raw_data["gmail-clone"]
     assert scenario.calendar_state == scenario.raw_data["calendar-clone"]
+    assert scenario.metadata.today == scenario.raw_data["today"]
 
 
 def test_loader_list_scenarios_includes_known_folder():

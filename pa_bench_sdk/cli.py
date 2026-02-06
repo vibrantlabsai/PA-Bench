@@ -117,10 +117,15 @@ async def run_load(args: CLIArgs):
     today = scenario.metadata.today or "not specified"
     print(f"Today: {today}")
     print("Setting gmail state...")
+    gmail_payload = dict(scenario.gmail_state)
+    calendar_payload = dict(scenario.calendar_state)
+    if scenario.metadata.today:
+        gmail_payload["today"] = scenario.metadata.today
+        calendar_payload["today"] = scenario.metadata.today
     await client.set_states(
         endpoints,
-        gmail_state=scenario.gmail_state,
-        calendar_state=scenario.calendar_state,
+        gmail_state=gmail_payload,
+        calendar_state=calendar_payload,
     )
     print("✅ Scenario loaded successfully.")
     print(f"Gmail instance: {endpoints.gmail_clone}")

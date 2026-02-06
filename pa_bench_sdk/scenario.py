@@ -62,7 +62,7 @@ class ScenarioLoader:
             task_data = json.load(f)
 
         description = task_data.get("description", "No description provided")
-        today = task_data.get("today")
+        today = raw_data.get("today") or task_data.get("today")
 
         gmail_state = raw_data.get("gmail-clone")
         calendar_state = raw_data.get("calendar-clone")
