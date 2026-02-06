@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=65.5", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "pa-bench-sdk"
 version = "0.1.0"
@@ -13,3 +17,6 @@ test = ["pytest>=7.0"]
 
 [project.scripts]
 pa-bench = "pa_bench_sdk.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pa_bench_sdk*", "gordon*"]
