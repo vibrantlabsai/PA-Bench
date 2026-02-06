@@ -143,7 +143,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
                 event_end = event_end.replace(tzinfo=timezone.utc)
             
             for participant_email in email_participants:
-                other_events = state.get(
+                other_events = state.get('calendar-clone').get(
                     "otherUsersEvents", {}
                 ).get(participant_email, [])
                 for other_event in other_events:
