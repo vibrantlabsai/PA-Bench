@@ -4,6 +4,39 @@ This repository hosts a minimal SDK (plus CLI) for loading the new
 PA Bench scenarios directly into the Vibrant Labs worlds and running the
 verifier that ships with each scenario.
 
+
+## Loading scenarios
+
+Each scenario folder already bundles the clone state under `gmail-clone`
+and `calendar-clone`. Load one with:
+
+```bash
+python -m pa_bench_sdk.cli load-scenario scenario_001_multi_meeting_coordination
+```
+
+Or use the `pa-bench` script installed via pip:
+
+```bash
+pa-bench load-scenario scenario_005_conflict_detection
+```
+
+Pass `--data-path` if your scenarios live elsewhere, or `--gmail-url`
+/ `--calendar-url` to override environment variables.
+
+## Verifying
+
+After loading, run the verifier against the live clones:
+
+```bash
+python -m pa_bench_sdk.cli verify scenario_001_multi_meeting_coordination
+```
+
+The CLI fetches the current state for each clone, imports the scenario's
+`verifier.py`, and prints the reward plus each `TaskVerifier`'s verdict.
+It exits with a non-zero status if any check fails.
+
+
+
 ## Directory layout
 
 - `data/`: Scenario folders as provided by the recent data batch. Each
@@ -36,49 +69,3 @@ GMAIL_INSTANCE_URL=http://xxx.worlds.vibrantlabs.com
 CALENDAR_INSTANCE_URL=http://yyy.worlds.vibrantlabs.com
 ```
 
-## Loading scenarios
-
-Each scenario folder already bundles the clone state under `gmail-clone`
-and `calendar-clone`. Load one with:
-
-```bash
-python -m pa_bench_sdk.cli load-scenario scenario_001_multi_meeting_coordination
-```
-
-Or use the `pa-bench` script installed via pip:
-
-```bash
-pa-bench load-scenario scenario_005_conflict_detection
-```
-
-Pass `--data-path` if your scenarios live elsewhere, or `--gmail-url`
-/ `--calendar-url` to override environment variables.
-
-## Verifying
-
-After loading, run the verifier against the live clones:
-
-```bash
-python -m pa_bench_sdk.cli verify scenario_001_multi_meeting_coordination
-```
-
-The CLI fetches the current state for each clone, imports the scenario's
-`verifier.py`, and prints the reward plus each `TaskVerifier`'s verdict.
-It exits with a non-zero status if any check fails.
-
-## Extending scenarios
-
-Each folder's `verifier.py` may import `TaskVerifier` from the local
-`gordon` package. The SDK exposes the same dataclass so existing verifiers
-continue to work without the private package.
-
-To add scenarios, drop a new `scenario_XXX_*` directory under `data/`
-containing `task.json`, `data.json`, and `verifier.py`.
-
-## Testing
-
-```bash
-python -m pytest
-```
-
-This runs the scenario loader/verifier tests plus CLI smoke tests.
