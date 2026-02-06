@@ -5,6 +5,17 @@ PA Bench scenarios directly into the Vibrant Labs worlds and running the
 verifier that ships with each scenario.
 
 
+## Installing
+
+Use the supplied `pyproject.toml` when installing:
+
+```bash
+python -m pip install -e .
+```
+
+This exposes the CLI entry point `pa-bench`, which delegates to the
+SDK's `pa_bench_sdk.cli` module.
+
 ## Loading scenarios
 
 Each scenario folder already bundles the clone state under `gmail-clone`
@@ -45,16 +56,6 @@ It exits with a non-zero status if any check fails.
 - `gordon/`: Local stand-in for the original `gordon.TaskVerifier`.
 - `tests/`: Pytest test cases verifying loader, verifier, and CLI.
 
-## Installing
-
-Use the supplied `pyproject.toml` when installing:
-
-```bash
-python -m pip install -e .
-```
-
-This exposes the CLI entry point `pa-bench`, which delegates to the
-SDK's `pa_bench_sdk.cli` module.
 
 ## Preparing Vibrant Labs worlds
 
