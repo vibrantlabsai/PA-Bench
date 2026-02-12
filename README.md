@@ -18,8 +18,8 @@ SDK's `pa_bench_sdk.cli` module.
 
 ## Loading scenarios
 
-Each scenario folder already bundles the clone state under `gmail-clone`
-and `calendar-clone`. Load one with:
+Each scenario folder already bundles the clone state under `gomail`
+and `gocalendar`. Load one with:
 
 ```bash
 python -m pa_bench_sdk.cli load-scenario scenario_001_multi_meeting_coordination
@@ -31,8 +31,8 @@ Or use the `pa-bench` script installed via pip:
 pa-bench load-scenario scenario_005_conflict_detection
 ```
 
-Pass `--data-path` if your scenarios live elsewhere, or `--gmail-url`
-/ `--calendar-url` to override environment variables.
+Pass `--data-path` if your scenarios live elsewhere, `--gomail-url`
+/ `--gocalendar-url` to override instance URLs, and `--worlds-base-url` to set the Worlds API URL.
 
 ## Verifying
 
@@ -66,7 +66,8 @@ on Worlds Vibrant Labs by POSTing to `/envs/<type>/create` (same flow as
 to `.env`.
 
 ```bash
-GMAIL_INSTANCE_URL=http://xxx.worlds.vibrantlabs.com
-CALENDAR_INSTANCE_URL=http://yyy.worlds.vibrantlabs.com
+WORLDS_BASE_URL=http://your-worlds-server:8080
+GOMAIL_INSTANCE_URL=http://xxx.worlds.vibrantlabs.com
+GOCALENDAR_INSTANCE_URL=http://yyy.worlds.vibrantlabs.com
 ```
 

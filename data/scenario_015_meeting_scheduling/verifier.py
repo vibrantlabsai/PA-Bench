@@ -61,7 +61,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     expected_location = 'Google Meet'
     expected_meeting_title = 'Project X — Planning & Alignment'
     
-    events = state.get("calendar-clone").get("events", [])
+    events = state.get("gocalendar").get("events", [])
 
     # Calculate email week boundaries
     email_timestamp = datetime.fromisoformat(expected_email["timestamp"])

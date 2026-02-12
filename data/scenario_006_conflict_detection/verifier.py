@@ -20,7 +20,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     expected_cc_emails = ['kaito.nakamura@helixgrid.com', 'elliot.rivera@gmail.com', 'priya.singh@helixgrid.com', 'olivia.brooks@helixgrid.com']
     user_email = "alan@helixgrid.com"
     
-    emails = state.get('gmail-clone', {}).get('emails', [])
+    emails = state.get('gomail', {}).get('emails', [])
     thread_emails = [email for email in emails if email['threadId'] == thread_id]
     
     checks: List[TaskVerifier] = []

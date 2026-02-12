@@ -1,6 +1,6 @@
 {
   "today": "2026-01-23T18:01:00.000Z",
-  "gmail-clone": {
+  "gomail": {
     "today": "2026-01-23T18:01:00.000Z",
     "user": {
       "name": "Alan Cooper",
@@ -6816,7 +6816,7 @@
       }
     ]
   },
-  "calendar-clone": {
+  "gocalendar": {
     "today": "2026-01-23T18:01:00.000Z",
     "user": {
       "name": "Alan Cooper",

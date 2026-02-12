@@ -70,7 +70,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     expected_additional_guest_emails = ['marcus.osei@helixgrid.com', 'pri.menon@auroracloud.com']
     expected_meeting_title = 'Project X - Planning Meeting'
     
-    events = state.get("calendar-clone").get("events", [])
+    events = state.get("gocalendar").get("events", [])
     checks: List[TaskVerifier] = []
     
     # Calculate email week boundaries
@@ -146,7 +146,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
                 event_end = event_end.replace(tzinfo=timezone.utc)
             
             for participant_email in expected_all_participants:
-                other_events = state.get('calendar-clone', {}).get(
+                other_events = state.get('gocalendar', {}).get(
                     "otherUsersEvents", {}
                 ).get(participant_email, [])
                 for other_event in other_events:

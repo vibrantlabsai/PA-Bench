@@ -40,7 +40,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     external_email = "ethan.park@ridgeviewadvisors.com"
     internal_emails = {'alan@helixgrid.com', 'tomas.oliveira@helixgrid.com', 'nadia.chen@helixgrid.com'}
     
-    events = state.get("calendar-clone").get("events", [])
+    events = state.get("gocalendar").get("events", [])
     checks: List[TaskVerifier] = []
     
     # Find meetings by timing and participants

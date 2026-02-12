@@ -11,10 +11,10 @@ def test_scenario_loader_returns_states(tmp_path):
 
     assert scenario.metadata.scenario_id == "scenario_001_multi_meeting_coordination"
     assert scenario.metadata.description
-    assert "gmail-clone" in scenario.raw_data
-    assert "calendar-clone" in scenario.raw_data
-    assert scenario.gmail_state == scenario.raw_data["gmail-clone"]
-    assert scenario.calendar_state == scenario.raw_data["calendar-clone"]
+    assert "gomail" in scenario.raw_data
+    assert "gocalendar" in scenario.raw_data
+    assert scenario.gmail_state == scenario.raw_data["gomail"]
+    assert scenario.calendar_state == scenario.raw_data["gocalendar"]
     assert scenario.metadata.today == scenario.raw_data["today"]
 
 
