@@ -83,8 +83,8 @@ class VerifierRunner:
             resolved_state = state
         elif scenario_obj is not None:
             resolved_state = {
-                "gmail-clone": scenario_obj.gmail_state,
-                "calendar-clone": scenario_obj.calendar_state,
+                "gomail": scenario_obj.gmail_state,
+                "gocalendar": scenario_obj.calendar_state,
             }
         else:
             raise ValueError("State must be provided when passing a scenario id")

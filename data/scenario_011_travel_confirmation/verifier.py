@@ -26,7 +26,7 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
     return_arrival = "2026-01-24T05:30:00.000Z"
     return_flight_number = "UA6451"
     
-    events = state.get("calendar-clone").get("events", [])
+    events = state.get("gocalendar").get("events", [])
     checks: List[TaskVerifier] = []
     
     # Parse datetime objects for comparison

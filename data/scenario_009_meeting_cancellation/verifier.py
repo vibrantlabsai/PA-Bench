@@ -68,8 +68,8 @@ def validation_function(state: Dict[str, Any]) -> Tuple[float, List[TaskVerifier
 }
     target_date = '2026-01-09T19:08:00.000Z'
     
-    events = state.get("calendar-clone").get("events", [])
-    emails = state.get("gmail-clone").get("emails", [])
+    events = state.get("gocalendar").get("events", [])
+    emails = state.get("gomail").get("emails", [])
     checks: List[TaskVerifier] = []
     
     # Check 1: Event removed from calendar

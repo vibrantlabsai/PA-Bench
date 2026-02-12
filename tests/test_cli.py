@@ -4,7 +4,6 @@ from unittest.mock import AsyncMock, patch
 
 from pa_bench_sdk.cli import (
     CLIArgs,
-    DEFAULT_WORLDS_BASE_URL,
     run_load,
     run_verify,
 )
@@ -20,10 +19,10 @@ def make_args():
     return CLIArgs(
         data_path=Path("data"),
         scenario_id=FIXTURE_SCENARIO,
-        gmail_url="http://gmail.instance",
-        calendar_url="http://calendar.instance",
+        gomail_url="http://gomail.instance",
+        gocalendar_url="http://gocalendar.instance",
         env_file=None,
-        worlds_base_url=DEFAULT_WORLDS_BASE_URL,
+        worlds_base_url="http://worlds.vibrantlabs.com",
     )
 
 
@@ -31,8 +30,8 @@ def make_args():
 @patch("pa_bench_sdk.cli.WorldsClient")
 def test_cli_load_sets_states(mock_world_client, mock_resolve):
     mock_resolve.return_value = InstanceEndpoints(
-        gmail_clone="http://gmail.instance",
-        calendar_clone="http://calendar.instance",
+        gmail_clone="http://gomail.instance",
+        calendar_clone="http://gocalendar.instance",
     )
     mock_client = mock_world_client.return_value
     mock_client.set_states = AsyncMock()
@@ -57,14 +56,14 @@ def test_cli_verify_fetches_states(
     mock_world_client, mock_verifier_runner, mock_resolve
 ):
     mock_resolve.return_value = InstanceEndpoints(
-        gmail_clone="http://gmail.instance",
-        calendar_clone="http://calendar.instance",
+        gmail_clone="http://gomail.instance",
+        calendar_clone="http://gocalendar.instance",
     )
     mock_client = mock_world_client.return_value
     mock_client.get_states = AsyncMock(
         return_value={
-            "gmail-clone": {},
-            "calendar-clone": {},
+            "gomail": {},
+            "gocalendar": {},
         }
     )
 

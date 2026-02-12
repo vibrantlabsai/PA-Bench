@@ -64,12 +64,12 @@ class ScenarioLoader:
         description = task_data.get("description", "No description provided")
         today = raw_data.get("today") or task_data.get("today")
 
-        gmail_state = raw_data.get("gmail-clone")
-        calendar_state = raw_data.get("calendar-clone")
+        gomail_state = raw_data.get("gomail")
+        calendar_state = raw_data.get("gocalendar")
 
-        if gmail_state is None or calendar_state is None:
+        if gomail_state is None or calendar_state is None:
             raise ValueError(
-                "Scenario data must define both 'gmail-clone' and 'calendar-clone' states"
+                "Scenario data must define both 'gomail' and 'gocalendar' states"
             )
 
         metadata = ScenarioMetadata(
@@ -80,7 +80,7 @@ class ScenarioLoader:
 
         return ScenarioDefinition(
             metadata=metadata,
-            gmail_state=gmail_state,
+            gmail_state=gomail_state,
             calendar_state=calendar_state,
             raw_data=raw_data,
             path=scenario_path,

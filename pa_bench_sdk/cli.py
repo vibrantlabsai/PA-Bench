@@ -30,15 +30,15 @@ class CLIArgs:
         self,
         data_path: Path,
         scenario_id: str,
-        gmail_url: Optional[str],
-        calendar_url: Optional[str],
+        gomail_url: Optional[str],
+        gocalendar_url: Optional[str],
         env_file: Optional[Path],
         worlds_base_url: str,
     ):
         self.data_path = data_path
         self.scenario_id = scenario_id
-        self.gmail_url = gmail_url
-        self.calendar_url = calendar_url
+        self.gomail_url = gomail_url
+        self.gocalendar_url = gocalendar_url
         self.env_file = env_file
         self.worlds_base_url = worlds_base_url
 
@@ -52,17 +52,16 @@ def _create_parser() -> argparse.ArgumentParser:
         help="Base path containing scenario folders (default: data/)",
     )
     parser.add_argument(
-        "--gmail-url",
-        help="Optional override for GMAIL_INSTANCE_URL",
+        "--gomail-url",
+        help="Optional override for GOMAIL_INSTANCE_URL",
     )
     parser.add_argument(
-        "--calendar-url",
-        help="Optional override for CALENDAR_INSTANCE_URL",
+        "--gocalendar-url",
+        help="Optional override for GOCALENDAR_INSTANCE_URL",
     )
     parser.add_argument(
         "--worlds-base-url",
-        default=DEFAULT_WORLDS_BASE_URL,
-        help="Base Worlds Vibrant Labs API URL (default: http://worlds.vibrantlabs.com)",
+        help="Base Worlds Vibrant Labs API URL (can also be set via WORLDS_BASE_URL in .env)",
     )
     parser.add_argument(
         "--env-file",
@@ -94,8 +93,8 @@ def _build_cli_args(parsed: argparse.Namespace) -> CLIArgs:
     return CLIArgs(
         data_path=parsed.data_path,
         scenario_id=parsed.scenario_id,
-        gmail_url=parsed.gmail_url,
-        calendar_url=parsed.calendar_url,
+        gomail_url=parsed.gomail_url,
+        gocalendar_url=parsed.gocalendar_url,
         env_file=parsed.env_file,
         worlds_base_url=parsed.worlds_base_url,
     )
@@ -105,8 +104,8 @@ async def run_load(args: CLIArgs):
     loader = ScenarioLoader(args.data_path)
     scenario = loader.load(args.scenario_id)
     endpoints = await resolve_instance_urls(
-        gmail_url=args.gmail_url,
-        calendar_url=args.calendar_url,
+        gmail_url=args.gomail_url,
+        calendar_url=args.gocalendar_url,
         env_path=args.env_file,
         base_url=args.worlds_base_url,
     )
@@ -116,28 +115,28 @@ async def run_load(args: CLIArgs):
     print(f"Task: {scenario.metadata.description}")
     today = scenario.metadata.today or "not specified"
     print(f"Today: {today}")
-    print("Setting gmail state...")
-    gmail_payload = dict(scenario.gmail_state)
-    calendar_payload = dict(scenario.calendar_state)
+    print("Setting gomail state...")
+    gomail_payload = dict(scenario.gmail_state)
+    gocalendar_payload = dict(scenario.calendar_state)
     if scenario.metadata.today:
-        gmail_payload["today"] = scenario.metadata.today
-        calendar_payload["today"] = scenario.metadata.today
+        gomail_payload["today"] = scenario.metadata.today
+        gocalendar_payload["today"] = scenario.metadata.today
     await client.set_states(
         endpoints,
-        gmail_state=gmail_payload,
-        calendar_state=calendar_payload,
+        gmail_state=gomail_payload,
+        calendar_state=gocalendar_payload,
     )
     print("✅ Scenario loaded successfully.")
-    print(f"Gmail instance: {endpoints.gmail_clone}")
-    print(f"Calendar instance: {endpoints.calendar_clone}")
+    print(f"Gomail instance: {endpoints.gmail_clone}")
+    print(f"Gocalendar instance: {endpoints.calendar_clone}")
 
 
 async def run_verify(args: CLIArgs):
     loader = ScenarioLoader(args.data_path)
     scenario = loader.load(args.scenario_id)
     endpoints = await resolve_instance_urls(
-        gmail_url=args.gmail_url,
-        calendar_url=args.calendar_url,
+        gmail_url=args.gomail_url,
+        calendar_url=args.gocalendar_url,
         env_path=args.env_file,
         base_url=args.worlds_base_url,
     )

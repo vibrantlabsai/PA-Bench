@@ -1,7 +1,7 @@
 """
 Client helpers for interacting with Vibrant Labs worlds.
 
-Works with Gmail and Calendar clones by name and mirrors the simple
+Works with Gomail and Gocalendar clones by name and mirrors the simple
 client pattern from the existing scraper scripts.
 """
 
@@ -15,7 +15,7 @@ from typing import Any, Dict, Optional
 
 import aiohttp
 
-DEFAULT_WORLDS_BASE_URL = "http://worlds.vibrantlabs.com"
+DEFAULT_WORLDS_BASE_URL: Optional[str] = None
 DEFAULT_ENV_PATH = Path(__file__).parent.parent / ".env"
 
 
@@ -25,16 +25,16 @@ class InstanceEndpoints:
     calendar_clone: str
 
     def for_clone(self, clone_name: str) -> str:
-        if clone_name == "gmail-clone":
+        if clone_name == "gomail":
             return self.gmail_clone
-        if clone_name == "calendar-clone":
+        if clone_name == "gocalendar":
             return self.calendar_clone
         raise KeyError(f"Unknown clone: {clone_name}")
 
     def as_mapping(self) -> Dict[str, str]:
         return {
-            "gmail-clone": self.gmail_clone,
-            "calendar-clone": self.calendar_clone,
+            "gomail": self.gmail_clone,
+            "gocalendar": self.calendar_clone,
         }
 
 
@@ -50,11 +50,12 @@ def _load_env_file(env_path: Path) -> None:
             os.environ.setdefault(key, value)
 
 
-def _persist_env_file(env_path: Path, endpoints: InstanceEndpoints) -> None:
+def _persist_env_file(env_path: Path, endpoints: InstanceEndpoints, base_url: str) -> None:
     env_path.parent.mkdir(parents=True, exist_ok=True)
     with open(env_path, "w", encoding="utf-8") as f:
-        f.write(f"GMAIL_INSTANCE_URL={endpoints.gmail_clone}\n")
-        f.write(f"CALENDAR_INSTANCE_URL={endpoints.calendar_clone}\n")
+        f.write(f"WORLDS_BASE_URL={base_url}\n")
+        f.write(f"GOMAIL_INSTANCE_URL={endpoints.gmail_clone}\n")
+        f.write(f"GOCALENDAR_INSTANCE_URL={endpoints.calendar_clone}\n")
 
 
 async def _create_instance(
@@ -73,11 +74,11 @@ async def _create_instance(
 
 
 async def create_instances(
-    base_url: str = DEFAULT_WORLDS_BASE_URL,
+    base_url: str,
 ) -> InstanceEndpoints:
     async with aiohttp.ClientSession() as session:
-        gmail = _create_instance(session, base_url, "gmail-clone")
-        calendar = _create_instance(session, base_url, "calendar-clone")
+        gmail = _create_instance(session, base_url, "gomail")
+        calendar = _create_instance(session, base_url, "gocalendar")
         gmail_url, calendar_url = await asyncio.gather(gmail, calendar)
     return InstanceEndpoints(gmail_clone=gmail_url, calendar_clone=calendar_url)
 
@@ -86,7 +87,7 @@ async def resolve_instance_urls(
     gmail_url: Optional[str] = None,
     calendar_url: Optional[str] = None,
     env_path: Optional[Path] = None,
-    base_url: str = DEFAULT_WORLDS_BASE_URL,
+    base_url: Optional[str] = None,
     create_if_missing: bool = True,
 ) -> InstanceEndpoints:
     env_path = env_path or DEFAULT_ENV_PATH
@@ -98,8 +99,17 @@ async def resolve_instance_urls(
         except ImportError:
             _load_env_file(env_path)
 
-    gmail_value = gmail_url or os.environ.get("GMAIL_INSTANCE_URL")
-    calendar_value = calendar_url or os.environ.get("CALENDAR_INSTANCE_URL")
+    # Load base_url from env - must be present
+    if base_url is None:
+        base_url = os.environ.get("WORLDS_BASE_URL")
+    if base_url is None:
+        raise EnvironmentError(
+            "WORLDS_BASE_URL is not set. "
+            "Set it via environment variable or .env file."
+        )
+
+    gmail_value = gmail_url or os.environ.get("GOMAIL_INSTANCE_URL")
+    calendar_value = calendar_url or os.environ.get("GOCALENDAR_INSTANCE_URL")
 
     if gmail_value and calendar_value:
         return InstanceEndpoints(
@@ -110,18 +120,19 @@ async def resolve_instance_urls(
     if not create_if_missing:
         missing = []
         if not gmail_value:
-            missing.append("GMAIL_INSTANCE_URL")
+            missing.append("GOMAIL_INSTANCE_URL")
         if not calendar_value:
-            missing.append("CALENDAR_INSTANCE_URL")
+            missing.append("GOCALENDAR_INSTANCE_URL")
         raise EnvironmentError(
             f"Instance URLs undefined: {', '.join(missing)}. "
             "Set them via env vars or .env."
         )
 
     endpoints = await create_instances(base_url)
-    os.environ["GMAIL_INSTANCE_URL"] = endpoints.gmail_clone
-    os.environ["CALENDAR_INSTANCE_URL"] = endpoints.calendar_clone
-    _persist_env_file(env_path, endpoints)
+    os.environ["GOMAIL_INSTANCE_URL"] = endpoints.gmail_clone
+    os.environ["GOCALENDAR_INSTANCE_URL"] = endpoints.calendar_clone
+    os.environ["WORLDS_BASE_URL"] = base_url
+    _persist_env_file(env_path, endpoints, base_url)
     return endpoints
 
 
@@ -155,6 +166,6 @@ class WorldsClient:
         gmail_state = await self._get(endpoints.gmail_clone)
         calendar_state = await self._get(endpoints.calendar_clone)
         return {
-            "gmail-clone": gmail_state,
-            "calendar-clone": calendar_state,
+            "gomail": gmail_state,
+            "gocalendar": calendar_state,
         }
